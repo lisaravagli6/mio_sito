@@ -580,6 +580,22 @@ p {
       min-height: 50px;
     }
 
+    .bg-abaco{
+      height: 70vh;
+    }
+
+    .testo-prodotto{
+      padding-bottom: 100px;
+    }
+
+    .testo-comunicazione{
+      padding-bottom: 100px;
+    }
+
+    .testo-workshop{
+      padding-bottom: 100px;
+    }
+
   .navbar-row > div:first-child {
     padding-left: 0 !important;
   }
