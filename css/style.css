@@ -567,9 +567,18 @@ p {
 /* ==================== MEDIA QUERIES ==================== */
 @media (max-width: 768px) {
    .navbar-row .logo img {
-    width: 100%;
-    max-width: 120px;
-  }
+      width: 100%;
+      max-width: 80px;
+      min-width: 70px;
+      height: auto;
+    }
+
+    .mobile-menù img {
+      width: 50px !important;
+      height: 50px !important;
+      min-width: 50px;
+      min-height: 50px;
+    }
 
   .navbar-row > div:first-child {
     padding-left: 0 !important;
