@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head> 
+<html lang="it">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Ravagli Lisa</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,280 +20,213 @@
 
 <body>
     <div class="container-fluid p-0 m-0">
-        
-        <!-- MENU -->
-        <div class="row d-flex align-items-center px-3 py-3 m-0 navbar-row">
-            <div class="col-1 col-md-1">
+
+        <!-- menù -->
+        <div class="row d-flex align-items-center px-4 py-4 m-0 navbar-row">
+            <div class="col-1">
                 <div class="logo">
-                    <img src="img/logo.webp" alt="logo" class="img-fluid">
-                </div> 
+                    <p class="font-size-logo">LR</p>
+                </div>
             </div>
 
-            <div class="col-8 col-md-8"></div>
-            
-            <div class="col-3 col-md-3 d-none d-md-flex justify-content-end">
+            <div class="col-8"></div>
+
+            <div class="col-3 d-none d-md-flex justify-content-end">
                 <div class="lista list-unstyled d-flex m-0 p-0">
                     <ul>
-                        <li><a href="#About" class="font-size-menù">about</a></li>
+                        <li><a href="#About" class="font-size-menu">ABOUT</a></li>
                         <li class="dropdown">
-                            <span class="font-size-menù">progetti</span>
+                            <span class="font-size-menu">PROGETTI</span>
                             <div class="dropdown-menu">
-                                <a href="#Comunicazione" class="dropdown-item">Comunicazione</a>
-                                <a href="#Prodotto" class="dropdown-item">Prodotto</a>
-                                <a href="#Workshop" class="dropdown-item">Workshop</a>
+                                <a href="#Comunicazione" class="dropdown-item">COMUNICAZIONE</a>
+                                <a href="#Prodotto" class="dropdown-item">PRODOTTO</a>
+                                <a href="#Workshop" class="dropdown-item">WORKSHOP</a>
                             </div>
                         </li>
-                        <li><a href="#Contatti" class="font-size-menù">contatti</a></li>
+                        <li><a href="#Contatti" class="font-size-menu">CONTATTI</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-1 d-md-none d-flex offset-2 justify-content-end mobile-menù">
-                <img src="img/menu-hamburger-svgrepo-com.svg" alt="menù-hamburger" class="img-fluid">
+            <div class="col-1 d-md-none d-flex offset-2 justify-content-end mobile-menu-trigger">
+                <img src="img/menu-hamburger-svgrepo-com.svg" alt="menù-hamburger"
+                    style="width: 45px; height: 45px; cursor: pointer;">
             </div>
 
-            <div id="mobileMenu" class="mobile-menu d-md-none">
-                <a href="#About" class="font-size-menù">About</a>
-                <div class="dropdown">
-                    <span class="font-size-menù">Progetti</span>
-                    <div class="dropdown-menu">
-                        <a href="#Comunicazione" class="dropdown-item">Comunicazione</a>
-                        <a href="#Prodotto" class="dropdown-item">Prodotto</a>
-                        <a href="#Workshop" class="dropdown-item">Workshop</a>
-                    </div>
-                </div>
-                <a href="#Contatti" class="font-size-menù">Contatti</a>
+            <div id="mobileMenu" class="mobile-menu">
+                <a href="#About">ABOUT</a>
+                <a href="#Comunicazione">COMUNICAZIONE</a>
+                <a href="#Prodotto">PRODOTTO</a>
+                <a href="#Workshop">WORKSHOP</a>
+                <a href="#Contatti">CONTATTI</a>
             </div>
         </div>
 
-        <!-- SFONDO HERO -->
-        <div class="row w-100 m-0">
-            <div class="bg-abaco d-flex flex-column justify-content-center vh-100 w-100 m-0 p-0">
-                <div class="col-1 col-md-1"></div>
-                <div class="col-2 col-md-2 d-flex align-items-center offset-md-1 offset-1">
-                    <h1>Oggetti<br>che<br>raccontano<br>storie</h1>
-                </div>
-                <div class="col-9 col-md-9"></div>
-            </div>
+        <!-- hero -->
+        <div class="bg-abaco">
+            <h1>DESIGN<br>E<br>MUSICA</h1>
         </div>
 
-        <!-- ABOUT PRESENTAZIONE -->
-        <div id="About" class="row d-flex align-items-start justify-content-start about-presentazione">
-            <div class="col-12 col-md-5 about-testi order-2 order-md-1 padding-left-pieno">
-                <h3 class="font-size-titoletti margin-top">About</h3>
+        <!-- about -->
+        <div id="About" class="row d-flex align-items-start justify-content-start about-presentazione padding-bottom">
+            <div class="col-12 col-md-5 about-testi padding-left-pieno">
+                <h3 class="font-size-titoletti-2 margin-top">About</h3>
                 <p class="font-size-paragrafi">
-                    Sono una studentessa al secondo anno di design, mi immergo ogni giorno nel mondo del product design, un campo che vedo come un'avventura creativa. La mia passione nasce dal desiderio di dare vita a oggetti che raccontano storie e risolvono esigenze reali, con un tocco personale e innovativo.
-                    Il mio percorso nasce dalla musica: il canto è stato il mio primo palcoscenico, oggi il design ne è il complemento. Due dimensioni diverse, unite dalla stessa spinta creativa che mi porta a cercare sempre nuove forme di espressione.
+                    Studentessa di design al secondo anno. Mi immergo ogni giorno nel product design, un campo che vedo
+                    come avventura creativa.<br><br>
+                    La mia passione nasce dal desiderio di dare vita a oggetti che raccontano storie e risolvono
+                    esigenze reali.<br><br>
+                    Il mio percorso nasce dalla musica: il canto è stato il mio primo palcoscenico, oggi il design ne è
+                    il complemento.
                 </p>
             </div>
-            <div class="col-12 col-md-6 offset-md-1 foto-primo-piano-1 order-1 order-md-2 margin-top">
+            <div class="col-12 col-md-6 offset-md-1 foto-primo-piano-1 margin-top">
+                <img src="img/canto.webp" class="img-fluid" alt="foto_primo_piano_ragazza">
+            </div>
+        </div>
+
+        <!-- frase -->
+        <div class="row align-items-center justify-content-center frase">
+            <div class="col-8 col-md-8">
+                <p class="font-size-titoletti mb-4">"Il design nasce dal territorio e dalla cultura che lo abita."<br>
+                </p>
+                <p class="font-size-paragrafi">- Enzo Mari- </p>
+            </div>
+        </div>
+
+        <!-- progetti -->
+        <div id="About" class="row d-flex align-items-start justify-content-start about-presentazione padding-bottom">
+            <div class="col-12 col-md-5 about-testi padding-left-pieno">
+                <h3 class="font-size-titoletti-2 margin-top">Progetti</h3>
+                <p class="font-size-paragrafi">
+                    Dalla teoria alla forma: una selezione di progetti che spaziano dal product design alla
+                    comunicazione visiva.<br><br>
+                    Ogni lavoro rappresenta una sfida risolta attraverso la ricerca, la sperimentazione materica e il
+                    desiderio di creare oggetti che non siano solo funzionali, ma capaci di dialogare con chi li usa.
+                </p>
+            </div>
+            <div class="col-12 col-md-6 offset-md-1 foto-primo-piano-1 margin-top">
                 <img src="img/foto_primopiano.webp" class="img-fluid" alt="foto_primo_piano_ragazza">
             </div>
         </div>
 
-        <!-- ABOUT PASSIONE -->
-        <div class="row foto-canto d-flex align-items-start justify-content-start about-presentazione">
-            <div class="col-12 col-md-6 foto-primo-piano-2 margin-top margin-bottom">
-                <img src="img/canto.webp" class="img-fluid" alt="foto_ragazza_che_canta">
-            </div>
-            <div class="col-12 col-md-5 offset-md-1 about-testi margin-bottom">
-                <h3 class="font-size-titoletti margin-top">About</h3>
-                <p class="font-size-paragrafi">
-                    In un mondo dove sentirsi sbagliati è all'ordine del giorno, io ho trovato il mio rifugio nel canto. 
-                    È la mia passione più grande, quella che mi ha formato: qualcosa di intrinseco dentro di me. 
-                    Canto da quando avevo sette anni e ad oggi posso dire che rimane una delle cose più belle che ho.
-                </p>
+        <!-- comunicazione -->
+        <div id="Comunicazione">
+            <div class="row d-flex align-items-center justify-content-start comunicazione">
+                <div class="col-1 col-md-1"></div>
+                <div class="col-12 col-md-5">
+                    <p class="font-size-titoli testo-comunicazione">Comunicazione</p>
+                </div>
             </div>
         </div>
 
-        <!-- FRASE -->
-        <div class="row align-items-center justify-content-center frase">
-            <div class="col-8 col-md-8">
-                <p class="font-size-titoletti">"Il design nasce dal territorio e dalla cultura che lo abita."<br></p>
-                <p class="font-size-paragrafi">- Enzo Mari- </p> 
-            </div>
-        </div> 
-
-        <!-- COMUNICAZIONE -->
-        <div id="Comunicazione" class="row d-flex align-items-center justify-content-start comunicazione">
-            <div class="col-12 col-md-5 padding-left-pieno">
-                <p class="font-size-titoletti testo-progetti">Progetti</p>
-                <p class="font-size-titoli testo-comunicazione">Comunicazione</p>
-                <p class="font-size-paragrafi testo-paragrafi">In questa sezione sono raccolti progetti di comunicazione visiva.Ogni progetto nasce dall'analisi del contesto e del messaggio da comunicare, per poi tradursi in soluzioni visive.</p> 
-            </div>
-            
-            <div class="col-12 col-md-6 offset-md-1 padding-right-carosello">
-                <div class="carousel-container margin-top margin-bottom">
-                    <div class="carousel-track">
-                        <div class="carousel-slide current-slide">
-                            <img src="img/luce.webp" alt="Immagine Carosello 1">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/mondo_perfetto_sfocato.webp" alt="Immagine Carosello 2">
-                        </div>
-                    </div>
-                    <button class="carousel-button prev" aria-label="Slide Precedente">&#10094;</button>
-                    <button class="carousel-button next" aria-label="Slide Successiva">&#10095;</button>
-                    <div class="carousel-nav">
-                        <button class="carousel-indicator current-slide" aria-label="Vai a Slide 1"></button>
-                        <button class="carousel-indicator" aria-label="Vai a Slide 2"></button>
-                    </div>
-                </div>
-            </div>
-        </div> 
-
-        <!-- FOTO COMUNICAZIONE -->
         <div class="row align-items-start justify-content-center foto-comunicazione">
             <div class="col-12 col-md-5">
                 <div class="img-box">
-                    <img src="img/luce.webp" class="img-fluid object-fit-cover" alt="foto_progetto_luce">
+                    <img src="img/luce.webp" class="img-fluid" alt="foto_progetto_luce">
                 </div>
                 <p class="font-size-titoli-progetti mt-4 mb-4">Luce</p>
-                <p class="font-size-paragrafi margin-bottom">Il progetto nasce dal tema del disordine sul territorio, interpretato attraverso la luce come rappresentazione del caos visivo e urbano. In laboratorio abbiamo realizzato scatti a lunga esposizione muovendo una torcia coperta da un telo di nylon per ottenere tracce luminose irregolari e diffuse, poi raccolte in un sedicesimo.</p>
+                <p class="font-size-paragrafi padding-bottom-mobile">Un’indagine sul caos visivo e urbano. Utilizza
+                    scatti a lunga esposizione e tracce luminose irregolari per rappresentare graficamente il disordine
+                    del territorio, raccogliendo i risultati in un sedicesimo.</p>
             </div>
-
             <div class="col-12 col-md-5">
                 <div class="img-box">
                     <img src="img/mondo_perfetto_sfocato.webp" class="img-fluid" alt="foto__progetto_mondo_perfetto">
                 </div>
                 <p class="font-size-titoli-progetti mt-4 mb-4">Utopia</p>
-                <p class="font-size-paragrafi">Il progetto nasce dalla parola "Utopia", intesa come qualcosa di etereo e intangibile. Abbiamo usato la sfocatura come linguaggio visivo per rappresentare ciò che è sospeso e irraggiungibile, arrivando a un risultato che riflette un'utopia più profonda: una donna libera, non più sessualizzata ma rappresentata con rispetto.</p>
+                <p class="font-size-paragrafi">Un lavoro sull'intangibile e il rispetto. Attraverso l'uso della
+                    sfocatura, il progetto trasforma il concetto di utopia in un messaggio sociale, rappresentando la
+                    figura femminile in modo libero e non sessualizzato.</p>
             </div>
         </div>
 
-        <!-- PRODOTTO -->
-        <div id="Prodotto" class="row align-items-center justify-content-start prodotto">
-            <div class="col-12 col-md-5 padding-left-pieno">
-                <p class="font-size-titoletti testo-progetti">Progetti</p>
-                <p class="font-size-titoli testo-prodotto">Prodotto</p>
-                <p class="font-size-paragrafi testo-paragrafi">In questa sezione sono raccolti progetti di comunicazione visiva.Ogni progetto nasce dall'analisi del contesto e del messaggio da comunicare, per poi tradursi in soluzioni visive.</p> 
-            </div>
-            
-            <div class="col-12 col-md-6 offset-md-1 padding-right-carosello">
-                <div class="carousel-container margin-top margin-bottom">
-                    <div class="carousel-track">
-                        <div class="carousel-slide current-slide">
-                            <img src="img/wonka_singolo.webp" alt="Immagine Carosello 1">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/pettorina.webp" alt="Immagine Carosello 2">
-                        </div>
-                    </div>
-                    <button class="carousel-button prev" aria-label="Slide Precedente">&#10094;</button>
-                    <button class="carousel-button next" aria-label="Slide Successiva">&#10095;</button>
-                    <div class="carousel-nav">
-                        <button class="carousel-indicator current-slide" aria-label="Vai a Slide 1"></button>
-                        <button class="carousel-indicator" aria-label="Vai a Slide 2"></button>
-                    </div>
+        <!-- prodotto -->
+        <div id="Prodotto">
+            <div class="row d-flex align-items-center justify-content-start prodotto">
+                <div class="col-1 col-md-1"></div>
+                <div class="col-12 col-md-5">
+                    <p class="font-size-titoli testo-comunicazione">Prodotto</p>
                 </div>
             </div>
-        </div> 
+        </div>
 
-        <!-- FOTO PRODOTTO -->
         <div class="row align-items-start justify-content-center foto-prodotto">
             <div class="col-12 col-md-5">
                 <div class="img-box">
-                    <img src="img/wonka_singolo.webp" class="img-fluid object-fit-cover" alt="foto_progetto_wonka">
+                    <img src="img/wonka_singolo.webp" class="img-fluid" alt="foto_progetto_wonka">
                 </div>
                 <p class="font-size-titoli-progetti mt-4 mb-4">Wonka</p>
-                <p class="font-size-paragrafi margin-bottom">Il modello prende il nome dalla sua somiglianza con una torre di cioccolato. Composta da parallelepipedi concentrici inclinati e ruotati di 45°. È realizzato in cartonlegno da 2 mm su base in compensato da 5 mm. Il progetto esplora come la geometria possa diventare linguaggio nel design, trasformando linee, piani e rotazioni in strumenti espressivi.</p>
+                <p class="font-size-paragrafi padding-bottom-mobile">Uno studio sulla geometria come linguaggio. Si
+                    tratta di una struttura a torre composta da parallelepipedi concentrici ruotati di 45°. È un
+                    esercizio di precisione formale realizzato in cartonlegno e compensato.</p>
             </div>
-
             <div class="col-12 col-md-5">
                 <div class="img-box">
                     <img src="img/pettorina.webp" class="img-fluid" alt="foto_progetto_pettorina_motocross">
                 </div>
                 <p class="font-size-titoli-progetti mt-4 mb-4">Pettorina da Motocross</p>
-                <p class="font-size-paragrafi">La pettorina, progettata in 3D su Rhino, è formata da quattro livelli con fori romboidali che aumentano l'elasticità e la libertà di movimento. Ideale per il motocross, andrebbe realizzata in gomma per garantire resistenza e flessibilità. È pensata per essere inserita in un'imbragatura in tessuto e completata dallo schienale per una protezione totale.</p>
+                <p class="font-size-paragrafi">Un progetto di design funzionale e tecnico sviluppato in 3D. La struttura
+                    a quattro livelli con fori romboidali è studiata per massimizzare l'elasticità e la protezione,
+                    unendo sicurezza e libertà di movimento.</p>
             </div>
         </div>
 
-        <!-- WORKSHOP -->
-        <div id="Workshop" class="row align-items-center justify-content-start workshop">
-            <div class="col-12 col-md-5 padding-left-pieno">
-                <p class="font-size-titoletti testo-progetti">Progetti</p>
-                <p class="font-size-titoli testo-workshop">Workshop</p>
-                <p class="font-size-paragrafi testo-paragrafi">In questa sezione sono raccolti progetti di comunicazione visiva.Ogni progetto nasce dall'analisi del contesto e del messaggio da comunicare, per poi tradursi in soluzioni visive.</p> 
-            </div>
-
-            <div class="col-12 col-md-6 offset-md-1 padding-right-carosello">
-                <div class="carousel-container margin-top margin-bottom">
-                    <div class="carousel-track">
-                        <div class="carousel-slide current-slide">
-                            <img src="img/annaffiamici_2.webp" alt="Immagine Carosello 1">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/annaffiamici_3.webp" alt="Immagine Carosello 2">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="img/annaffiamici_4.webp" alt="Immagine Carosello 2">
-                        </div>
-                    </div>
-                    <button class="carousel-button prev" aria-label="Slide Precedente">&#10094;</button>
-                    <button class="carousel-button next" aria-label="Slide Successiva">&#10095;</button>
-                    <div class="carousel-nav">
-                        <button class="carousel-indicator current-slide" aria-label="Vai a Slide 1"></button>
-                        <button class="carousel-indicator" aria-label="Vai a Slide 2"></button>
-                        <button class="carousel-indicator" aria-label="Vai a Slide 3"></button>
-                    </div>
+        <!-- workshop -->
+        <div id="Workshop">
+            <div class="row d-flex align-items-center justify-content-start workshop">
+                <div class="col-1 col-md-1"></div>
+                <div class="col-12 col-md-5">
+                    <p class="font-size-titoli">Workshop</p>
                 </div>
             </div>
-        </div> 
+        </div>
 
-        <!-- FOTO WORKSHOP -->
-        <div class="row align-items-center justify-content-center foto-workshop padding-right padding-left">
-            <div class="col-12 col-md-4">
-                <div class="img-box-2">
-                    <img src="img/annaffiamici_2.webp" class="img-fluid" alt="foto_progetto_annaffiamici">
-                </div>  
+        <div class="row align-items-start justify-content-center foto-workshop">
+            <div class="col-12 col-md-5">
+                <div class="img-box padding-bottom-mobile">
+                    <img src="img/annaffiamici_2.webp" class="img-fluid" alt="foto_progetto_wonka">
+                </div>
             </div>
-            <div class="col-12 col-md-4 margin-top-mobile">
-                <div class="img-box-2">
-                    <img src="img/annaffiamici_3.webp" class="img-fluid" alt="foto_progetto_annaffiamici">
-                </div>  
+            <div class="col-12 col-md-5">
+                <div class="img-box">
+                    <img src="img/annaffiamici_4.webp" class="img-fluid" alt="foto_progetto_pettorina">
+                </div>
             </div>
-            <div class="col-12 col-md-4 margin-top-mobile">
-                <div class="img-box-2">
-                    <img src="img/annaffiamici_4.webp" class="img-fluid" alt="foto_progetto_annaffiamici">
-                </div>  
-            </div>
-            <div class="col-12 col-md-12">
-                <p class="font-size-titoli-progetti mb-4 margin-top-small">Annaffiamici</p>
-                <p class="font-size-paragrafi margin-bottom">Questo innaffiatoio è stato progettato come oggetto di mediazione per far collaborare due fratelli anche quando litigano. Un meccanismo interno a due parti fa fuoriuscire l'acqua se non viene tenuto da entrambi in modo coordinato. Le piante diventano così un obiettivo comune e l'oggetto uno strumento ludico che insegna cooperazione e gestione dei conflitti.</p>
+            <div class="col-12 col-md-10 padding-bottom">
+                <p class="font-size-titoli-progetti mt-4 mb-4">Annaffiamici</p>
+                <p class="font-size-paragrafi">Un oggetto di mediazione e cooperazione. Questo speciale annaffiatoio
+                    funziona solo se tenuto e coordinato da due persone contemporaneamente. È pensato per risolvere i
+                    conflitti tra fratelli, trasformando la cura delle piante in un obiettivo comune e ludico.</p>
             </div>
         </div>
 
-        <!-- CONTATTI -->
-        <div id="Contatti" class="row align-items-center justify-content-center sezione-contatti">
-            <div class="col-12 col-md-4 offset-md-1 margin-bottom margin-top scritte-contatti">
-                <p class="font-size-contatti">Contatti</p>
+        <!-- contatti -->
+        <div id="Contatti" class="row align-items-center justify-content-center contatti sezione-contatti p-0 m-0">
+            <div class="col-12 col-md-4 offset-md-1 margin-bottom margin-top">
+                <p class="font-size-titoletti-2 mb-4">Contatti</p>
                 <p class="font-size-paragrafi">Per progetti, collaborazioni o anche solo per scambiare idee.</p>
             </div>
-
-            <div class="col-12 col-md-2 offset-md-2">
+            <div class="col-6 col-md-2 offset-md-2 padding-bottom-mobile bottoni-mobile">
                 <div class="bottoni-contatti">
                     <a href="mailto:lisaravagli6@gmail.com" class="btn-contatto btn-email">e-mail</a>
                 </div>
             </div>
-
-            <div class="col-12 col-md-2">   
+            <div class="col-6 col-md-2 padding-bottom-mobile bottoni-mobile">
                 <div class="bottoni-contatti margin-bottom-mobile">
-                    <a href="https://www.instagram.com/lisaravagli?igsh=MWlmeXI0Z3pvcjE0Yw==" class="btn-contatto btn-social">social</a>
+                    <a href="https://www.instagram.com/lisaravagli" class="btn-contatto btn-social">social</a>
                 </div>
             </div>
-
             <div class="col-md-1"></div>
-        </div> 
+        </div>
 
-        <!-- SCROLL UP BUTTON -->
         <a href="#" id="scrollUpButton" title="Torna su">&#9650;</a>
 
     </div>
 
-    <!-- JAVASCRIPT -->
     <script>
         // MENU MOBILE
-        const hamburger = document.querySelector('.col-1.d-md-none img');
+        const hamburger = document.querySelector('.mobile-menu-trigger img');
         const mobileMenu = document.getElementById('mobileMenu');
 
         hamburger.addEventListener('click', () => {
@@ -314,74 +246,9 @@
             });
         });
 
-        // CAROSELLO
-        document.addEventListener('DOMContentLoaded', () => {
-            const carousels = document.querySelectorAll('.carousel-container');
-
-            carousels.forEach(container => {
-                const track = container.querySelector('.carousel-track');
-                const slides = Array.from(container.querySelectorAll('.carousel-slide'));
-                const nextButton = container.querySelector('.carousel-button.next');
-                const prevButton = container.querySelector('.carousel-button.prev');
-                const indicators = Array.from(container.querySelectorAll('.carousel-indicator'));
-
-                let currentIndex = 0;
-
-                const getSlideWidth = () => slides[0].getBoundingClientRect().width;
-
-                const moveToSlide = (targetIndex) => {
-                    const slideWidth = getSlideWidth();
-                    track.style.transform = `translateX(-${targetIndex * slideWidth}px)`;
-
-                    indicators.forEach(ind => ind.classList.remove('current-slide'));
-                    slides.forEach(slide => slide.classList.remove('current-slide'));
-
-                    indicators[targetIndex].classList.add('current-slide');
-                    slides[targetIndex].classList.add('current-slide');
-
-                    currentIndex = targetIndex;
-                };
-
-                nextButton.addEventListener('click', () => {
-                    const nextIndex = (currentIndex + 1) % slides.length;
-                    moveToSlide(nextIndex);
-                    resetAutoScroll();
-                });
-
-                prevButton.addEventListener('click', () => {
-                    const prevIndex = (currentIndex - 1 + slides.length) % slides.length;
-                    moveToSlide(prevIndex);
-                    resetAutoScroll();
-                });
-
-                indicators.forEach((indicator, index) => {
-                    indicator.addEventListener('click', () => {
-                        moveToSlide(index);
-                        resetAutoScroll();
-                    });
-                });
-
-                let autoScrollInterval = setInterval(() => {
-                    const nextIndex = (currentIndex + 1) % slides.length;
-                    moveToSlide(nextIndex);
-                }, 5000);
-
-                const resetAutoScroll = () => {
-                    clearInterval(autoScrollInterval);
-                    autoScrollInterval = setInterval(() => {
-                        const nextIndex = (currentIndex + 1) % slides.length;
-                        moveToSlide(nextIndex);
-                    }, 5000);
-                };
-
-                window.addEventListener('resize', () => moveToSlide(currentIndex));
-            });
-        });
-
         // SCROLL UP BUTTON
         const scrollButton = document.getElementById('scrollUpButton');
-
-        window.onscroll = function() {
+        window.onscroll = function () {
             if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
                 scrollButton.style.display = "block";
             } else {
@@ -389,13 +256,11 @@
             }
         };
 
-        scrollButton.addEventListener('click', function(e) {
+        scrollButton.addEventListener('click', function (e) {
             e.preventDefault();
-            window.scrollTo({ 
-                top: 0, 
-                behavior: 'smooth' 
-            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>
+
 </html>

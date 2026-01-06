@@ -5,7 +5,7 @@
   box-sizing: border-box; 
 }
 
-html{
+html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100%;
@@ -33,63 +33,98 @@ body {
   max-width: 100%;
 }
 
+.navbar-row {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lista {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lista ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  list-style: none;
+  margin: 0; 
+  padding: 0; 
+}
+
 /* ==================== TIPOGRAFIA ==================== */
-.font-size-menù{
-  font-family: 'Poppins', sans-serif;
+.font-size-menu {
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 24px;
+  color:black;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.font-size-logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
   color: black;
   text-decoration: none;
   white-space: nowrap;
 }
 
-.font-size-titoli{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 48px;
-  color: #5B21B6;
+.font-size-titoli {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color:#5B21B6;
   text-decoration: none;
 }
 
-.font-size-titoletti{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 24px;
+.font-size-titoletti {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
   color: black;
   text-decoration: none;
 }
 
-.font-size-paragrafi{
+.font-size-titoletti-2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: black;
+  text-decoration: none;
+}
+
+.font-size-paragrafi {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-size: 20px;
+  font-weight: 400;
   color: black;
   text-decoration: none;
 }
 
-.font-size-titoli-progetti{
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 24px;
-  color: #5B21B6;
-  text-decoration: none;
-}
-
-.font-size-contatti{
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-h1{
-  color:#5B21B6;
-  font-size: 48px;
-  font-weight: bold;
+.font-size-titoli-progetti {
   font-family: 'Inter', sans-serif;
-  line-height: 1.2; 
+  font-weight: 700;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  color: #5B21B6;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.1;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -102,30 +137,14 @@ p {
 }
 
 /* ==================== MENU / NAVBAR ==================== */
-.logo img {
-  max-width: 95px;
-  width: 100%;
-  height: auto;
-}
-
-.lista ul {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-  justify-content: flex-end;
-  margin: 0; 
-  padding: 0; 
-}
-
 .lista li {
-    display: inline-block;
+  display: inline-block;
 }
 
-.font-size-menù:hover {
+.font-size-menù:hover, .font-size-menu:hover {
   color: #5B21B6;
 }
 
-/* Dropdown per progetti */
 .dropdown {
   position: relative;
 }
@@ -148,7 +167,6 @@ p {
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
   border-radius: 8px;
   padding: 10px 0;
-  margin-top: 0px;
   z-index: 1001;
 }
 
@@ -176,7 +194,7 @@ p {
   position: absolute;
   top: 60px;
   right: 0;
-  width: 220px;
+  width: 300px;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -212,23 +230,26 @@ p {
   padding: 10px 20px;
   color: black;
   text-decoration: none;
-  transition: all 0.2s ease;
-}
-
-.mobile-menu .dropdown-item:hover {
-  color: #5B21B6;
-  background-color: #D8B4FE;
 }
 
 /* ==================== SFONDO / HERO ==================== */
 .bg-abaco {
   background-image: url('../img/abaco.webp');
-  background-position: center;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  background-size: cover; 
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-abaco h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 /* ==================== SEZIONE ABOUT ==================== */
@@ -237,29 +258,25 @@ p {
   min-height: 50vh;
 }
 
-.foto-primo-piano-1{
-  padding-right: 40px;
+.foto-primo-piano-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%;
+    padding-right: 40px;
 }
 
-.foto-primo-piano-2{
-  padding-left: 40px;
-}
-
-.foto-primo-piano img {
-  width: 100%;
-  height: auto;
-  display: block; 
-}
-
-.foto-canto img {
-  width: 100%;
-  height: auto;
-  display: block; 
+.foto-primo-piano-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center;
 }
 
 /* ==================== SEZIONE FRASE ==================== */
-.frase{
-  background-color: #C084FC;
+.frase {
+  background-color:#C084FC;
   text-align: center;
   min-height: 50vh;
   display: flex;
@@ -268,74 +285,61 @@ p {
 }
 
 /* ==================== SEZIONE COMUNICAZIONE ==================== */
-.comunicazione{
+.comunicazione {
   background-color: rgba(216, 180, 254, 0.5);
   text-align: left;
-  min-height: 50vh;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.testo-comunicazione{
-  padding-bottom: 200px;
-}
-
-.foto-comunicazione{
+.foto-comunicazione {
   background-color: rgba(216, 180, 254, 0.5);
   align-items: center;
   justify-content: center;
 }
 
+
 .img-box {
-  width: 100%;
-  aspect-ratio: 550 / 600;
-  max-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 
 /* ==================== SEZIONE PRODOTTO ==================== */
-.prodotto{
+.prodotto {
   background-color: rgba(216, 180, 254, 0.5);
   text-align: left;
-  min-height: 50vh;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.testo-prodotto{
-  padding-bottom: 200px;
-}
-
-.foto-prodotto{
+.foto-prodotto {
   background-color: rgba(216, 180, 254, 0.5);
   align-items: center;
   justify-content: center;
 }
 
 /* ==================== SEZIONE WORKSHOP ==================== */
-.workshop{
+.workshop {
   background-color: rgba(216, 180, 254, 0.5);
   text-align: left;
-  min-height: 40vh;
+  min-height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.testo-workshop{
-  padding-bottom: 200px;
 }
 
 .foto-workshop {
@@ -343,127 +347,15 @@ p {
    align-items: start;
 }
 
-.img-box-2{  
-  width: 100%;
-  aspect-ratio: 440 / 310;
-  max-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.img-box-2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 /* ==================== SEZIONE PROGETTI ==================== */
-.testo-progetti{
+.testo-progetti {
   margin-top: 40px;
 }
 
-.testo-paragrafi{
-  margin-bottom: 40px;
-}
-
-/* ==================== CAROSELLO ==================== */
-.carousel-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%; 
-    max-width: 100%; 
-    height: 60vh; 
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%; 
-}
-
-.carousel-slide {
-    min-width: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    height: 100%; 
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    object-position: center;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    font-size: 24px;
-    line-height: 1;
-}
-
-.carousel-button.prev { 
-    left: 10px; 
-}
-
-.carousel-button.next { 
-    right: 10px; 
-}
-
-.carousel-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-}
-
-.carousel-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #bbb;
-    border: none;
-    margin: 0 5px;
-    cursor: pointer;
-    padding: 0;
-    transition: background 0.3s ease;
-}
-
-.carousel-indicator.current-slide {
-    background: #555; 
-}
-
-.padding-right-carosello{
-    padding-right: 40px;
-}
-
 /* ==================== SEZIONE CONTATTI ==================== */
-.contatti{
-  background-color: white;
-  max-height: 50vh;
+.contatti {
+  background-color: #D8B4FE;
+  max-height: 70vh;
   width: 100%;
   margin: 0;
 }
@@ -486,21 +378,21 @@ p {
   box-sizing: border-box;
 }
 
-.btn-email{
- background-color: #D8B4FE;
- color: #000;
+.btn-email {
+  background-color: #5B21B6;
+  color:white;
 }
 
-.btn-email:hover{
+.btn-email:hover {
   text-decoration: underline;
 }
 
-.btn-social{
- background-color: #000;
- color: #D8B4FE;
+.btn-social {
+  background-color:black;
+  color: white;
 }
 
-.btn-social:hover{
+.btn-social:hover {
   text-decoration: underline;
 }
 
@@ -510,11 +402,9 @@ p {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
-    
     display: none;
     background-color: #5B21B6;
     color: white;
-    border: none;
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -524,7 +414,7 @@ p {
     text-decoration: none;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, opacity 0.3s;
+    transition: background-color 0.3s;
 }
 
 #scrollUpButton:hover {
@@ -532,169 +422,81 @@ p {
 }
 
 /* ==================== UTILITY CLASSES - SPACING ==================== */
-.margin-top{
+.margin-top {
   margin-top: 40px;
 }
 
-.margin-top-small{
-  margin-top: 20px;
-}
-
-.margin-bottom{
+.margin-bottom {
   margin-bottom: 40px;
 }
 
-.margin-left{
-  margin-left: 40px;
+.padding-left-pieno {
+  padding-left: 40px;
+  padding-right: 12px;
 }
 
-.margin-right{
-  margin-right: 40px;
-}
-
-.padding-right{
-  padding-right: 28px;
-}
-
-.padding-left{
-  padding-left: 28px;
-}
-
-.padding-left-pieno{
+.padding-left {
   padding-left: 40px;
 }
 
+.padding-bottom {
+  padding-bottom: 40px;
+}
+
 /* ==================== MEDIA QUERIES ==================== */
-@media (max-width: 768px) {
-   .navbar-row .logo img {
-      width: 100%;
-      max-width: 80px;
-      min-width: 70px;
-      height: auto;
-    }
 
-    .mobile-menù img {
-      width: 50px !important;
-      height: 50px !important;
-      min-width: 50px;
-      min-height: 50px;
-    }
-
-    .bg-abaco{
-      height: 70vh;
-    }
-
-    .testo-prodotto{
-      padding-bottom: 100px;
-    }
-
-    .testo-comunicazione{
-      padding-bottom: 100px;
-    }
-
-    .testo-workshop{
-      padding-bottom: 100px;
-    }
-
-  .navbar-row > div:first-child {
-    padding-left: 0 !important;
-  }
-
+/* TABLET (481px - 768px) */
+@media (max-width: 768px) and (min-width: 481px) {
   h1 {
-    font-size: 36px;
+    font-size: 70px;
   }
 
-  .lista ul {
-    gap: 20px;
+  .font-size-logo {
+    font-size: 32px;
   }
 
-  .font-size-menù {
-    font-size: 16px; 
+  .font-size-menu {
+    font-size: 18px;
   }
 
   .font-size-titoli {
-    font-size: 32px; 
+    font-size: 40px;
   }
 
   .font-size-titoletti {
-    font-size: 20px; 
+    font-size: 28px;
+  }
+
+  .font-size-titoletti-2 {
+    font-size: 28px;
+  }
+
+  .font-size-titoli-progetti {
+    font-size: 22px;
   }
 
   .font-size-paragrafi {
-    font-size: 16px; 
+    font-size: 18px;
   }
 
-  .font-size-contatti{
-    font-size: 16px; 
+  .bg-abaco {
+    height: 80vh;
+  }
+
+  .testo-comunicazione, .workshop {
+    padding-bottom: 40px;
   }
 
   .about-testi {
     padding: 0 40px;
   }
 
-  .foto-workshop .col-10:first-child .img-box-2,
-  .foto-workshop .col-md-5:first-child .img-box-2 {
-    padding-bottom: 20px;
-  }
-  
-  .bottoni-contatti {
-    flex-direction: column;  
-    gap: 20px;               
-    justify-content: center;
-    align-items: center;    
-    margin-top: 20px;
-  }
-  
-  .btn-contatto {
-    width: 100%;            
-    max-width: 200px;        
-  }
-
-  .margin-left-mobile{
-    margin-left: 40px;
-  }
-
-  .margin-right-mobile{
-    margin-right: 40px;
-  }
-
-  .foto-primo-piano-1,
-  .foto-primo-piano-2 {
+  .foto-primo-piano-1 {
     padding-left: 40px !important;
     padding-right: 40px !important;
-    box-sizing: border-box;
-  }
-
-   .foto-primo-piano-2 {
-    margin-bottom: 0 !important;
-  }
-
-  .margin-top-mobile{
-    margin-top: 20px;
-  }
-  
-  .margin-bottom-mobile{
-    margin-bottom: 40px;
-  }
-
-  .padding-right-carosello{
-    padding-right: 0px !important;
-  }
-
-  .padding-left-carosello{
-    padding-left: 0px !important;
-  }
-
-  .margin-left-mobile{
-    margin-left: 40px;
-  }
-  
-  .margin-right-mobile{
-    margin-right: 40px;
   }
 
   .about-presentazione > .col-12,
-  .foto-canto > .col-12,
   .comunicazione > .col-12,
   .foto-comunicazione > .col-12,
   .prodotto > .col-12,
@@ -704,14 +506,118 @@ p {
   .sezione-contatti > .col-12 {
       padding-left: 40px !important;
       padding-right: 40px !important;
-      box-sizing: border-box;
+  }
+  .padding-bottom-mobile{
+    padding-bottom: 40px;
   }
 
-  .padding-left{
-    padding-left: 0 !important;
+  .bottoni-contatti {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
 
-  .padding-right{
-    padding-right: 0 !important;
+    .mobile-menu img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* SMARTPHONE (sotto 481px) */
+@media (max-width: 480px) {
+  .navbar-row .logo img {
+    width: 100%;
+    max-width: 80px;
+    min-width: 70px;
+    height: auto;
+  }
+
+  .mobile-menu img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .bg-abaco {
+    height: 70vh;
+  }
+
+  .testo-comunicazione, .workshop {
+    padding-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .font-size-logo {
+    font-size: 32px;
+  }
+
+  .font-size-menu {
+    font-size: 16px;
+  }
+
+  .font-size-titoli {
+    font-size: 32px;
+  }
+
+  .font-size-titoletti {
+    font-size: 24px;
+  }
+
+  .font-size-titoletti-2 {
+    font-size: 24px;
+  }
+
+  .font-size-titoli-progetti {
+    font-size: 20px;
+  }
+
+  .font-size-paragrafi {
+    font-size: 16px;
+  }
+
+  .about-testi {
+    padding: 0 40px;
+  }
+
+  .bottoni-contatti {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .btn-contatto {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .foto-primo-piano-1 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .margin-bottom-mobile {
+    margin-bottom: 40px;
+  }
+
+  .padding-bottom-mobile {
+    padding-bottom: 40px;
+  }
+
+  .about-presentazione > .col-12,
+  .comunicazione > .col-12,
+  .foto-comunicazione > .col-12,
+  .prodotto > .col-12,
+  .foto-prodotto > .col-12,
+  .workshop > .col-12,
+  .foto-workshop > .col-12,
+  .sezione-contatti > .col-12 {
+      padding-left: 40px !important;
+      padding-right: 40px !important;
   }
 }
