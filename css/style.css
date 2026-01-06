@@ -222,7 +222,7 @@ p {
 
 /* ==================== SFONDO / HERO ==================== */
 .bg-abaco {
-  background-image: url('../img/abaco.png');
+  background-image: url('../img/abaco.webp');
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
